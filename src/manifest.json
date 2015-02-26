@@ -1,0 +1,19 @@
+{
+  "name": "MabInchant",
+  "manifest_version" : 2,
+  "version": "1",
+  "description": "hello world",
+
+
+  "web_accessible_resources": ["popup.html"],
+  "content_scripts": [
+    {
+      "matches": ["http://cafe.naver.com/*"],
+      "all_frames": true,
+      "js": ["background.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
